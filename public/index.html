@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+   
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First HTML File</title>
+    <link rel="stylesheet" href="form.html">
+    <!-- <link rel="stylesheet" href="dashboard.html"> -->
+    <script>
+        function goToSecondHTML() {
+            window.location.href = "second.html";
+        }
+    </script>
+</head>
+<body>
+    <h1>Welcome to the First HTML File</h1>
+    <p>Click the button below to go to the Second HTML File:</p>
+    <button onclick="goToSecondHTML()">Go to Second HTML File</button>
+</body>
+</html>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostel</title>
+
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
+    <a href="dashboard.html">go to dashboard</a>
+
+    <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+  ></script>
+    <script type="text/javascript">
+        (function () {
+          emailjs.init("U6bvfHX-hxch2mSfS");
+        })();
+      </script>
+      <link rel="stylesheet" href="dashboard.html">
+    
+</head>
+<body>
+    
+    <header>
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <a href="#" class="logo"><span>APNA-</span>GHAR
+         <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#book">book</a>
+            <a href="#packages">packages</a>
+            <a href="#services">services</a>
+            
+            <a href="#review">review</a>
+            <a href="#contact">contact</a>
+   </nav>   
+   <div class="icon">
+   <i class="fas fa-search" id="search-btn"></i>
+   <i class="fas fa-user" id="login-btn"></i>
+   </div>
+
+   <form action="" class="search-bar-container">
+    <input type="search" id="search-bar" placeholder="search here...">
+    <label for="search-bar" class="fas fa-search"></label>
+   </form>
+    </header>
+
+
+    <div class="login-form-container">
+        <i class="fas fa-times" id="form-close"></i>
+        <form action="/login" method="POST">
+            <label for="username">Username</label>
+            <input type="text" class="box" id="username" name="username" required>
+            <br>
+            <label for="password">Password</label>
+            <input type="password" class="box" id="password" name="password" required>
+            <br>
+            <button type="submit" class="btn">Login</button>
+            <p> Don't have an account<a href="/register">Register Now</a></p>
+          </form>
+    </div>
+
+
+
+    <section class="home" id="home">
+        <div class="content">
+            <h3>welcome to A global icon of luxury</h3>
+            <p>discover new places with us, luxury awaits </p>
+        </div>
+
+        <!-- <div class="img1">
+            <img src="" alt="Bgbanner">
+        </div> -->
+      </section>
+
+      
+      <section class="book" id="book">
+        <h1 class="heading">
+            <span>B</span>
+            <span>o</span>
+            <span>o</span>
+            <span>k</span>
+            <span class="space"></span>
+            <span>N</span>
+            <span>o</span>
+            <span>w</span>
+        </h1>
+
+        <div class="row">
+            <div class="img">
+                <img src="img/Banner4.jpg" alt="">
+            </div>
+
+            <div class="form-group">
+                <h5 for="name">Where To</h5>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Place name"
+                />
+              </div>
+              <div class="form-group">
+                <h5 for="email">How Many</h5>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Number of guests"
+                />
+              </div>
+              <div class="form-group">
+                <h5 for="email">Arrivals</h5>
+                <input
+                  type="date"
+                  class="form-control"
+                  id="arrivals"
+                  placeholder=""
+                />
+              </div>
+              <div class="form-group">
+                <h5 for="email">Living</h5>
+                <input
+                  type="date"
+                  class="form-control"
+                  id="living"
+                  placeholder=""
+                />
+              </div>
+              <div class="form-group">
+                <h5 for="message">Message</h5>
+                <textarea class="form-control" id="message" rows="3"></textarea>
+              </div>
+              <button class="btn btn-primary" onclick="sendMail()">Submit</button>
+            </div>
+      </section>
+
+
+
+      <section class="packages" id="packages">
+        <h1 class="heading">
+            <span>P</span>
+            <span>a</span>
+            <span>c</span>
+            <span>k</span>
+            <span>a</span>
+            <span>g</span>
+            <span>e</span>
+            <span>s</span>
+            
+        </h1>
+           
+        <div class="box-container">
+            <div class="box">
+                <img src="img/Jodhpur.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-market-alt"></i>Jodhpur</h3>
+                    <p> Welcome to our cozy PG in Jodhpur, where comfort meets convenience. Enjoy spacious rooms furnished with modern amenities. Stay connected with high-speed Wi-Fi and unwind in our common lounge area. Indulge in delicious meals prepared in our well-equipped kitchen. With round-the-clock security and cleaning services, your peace of mind is our priority. Experience hassle-free living at its finest.
+                    </p>
+                  <div class="rating">
+  <span class="star fa fa-star"></span>
+  <span class="star fa fa-star"></span>
+  <span class="star fa fa-star"></span>
+  <span class="star fa fa-star"></span>
+  <span class="star fa fa-star-half-stroke"></span>
+</div>
+
+                    <div class="price"> ₹7500 <span>₹9000</span></div>
+                    <a href="jodhpur.html" class="btn">Book Now</a>
+
+                 
+
+
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="img/Udaipur.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-market-alt"></i>Udaipur</h3>
+                    <p>Welcome to our cozy PG in Udaipur, where comfort meets convenience. Nestled in the heart of the city, our fully furnished accommodations offer a serene environment for students and working professionals alike. Enjoy modern amenities such as high-speed Wi-Fi, 24/7 security, delicious meals, and a friendly community atmosphere. Experience the perfect blend of comfort and affordability at our PG in Udaipur.</p>
+                   <div class="rating">
+  <span class="star fa fa-star"></span>
+  <span class="star fa fa-star"></span>
+  <span class="star fa fa-star"></span>
+  <span class="star fa fa-star"></span>
+  <span class="star fa fa-star-empty"></span>
+</div>
+                    <div class="price"> ₹8500 <span>₹10000</span></div>
+                    
+                   
+                       
+                        <a href="udaipur.html" class="btn">Book Now</a>
+                      </a>
+                   
+
+
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="img/Agra.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-market-alt"></i>Agra</h3>
+                    <p>Discover comfort and convenience at our Agra PG. With spacious, well-furnished rooms and modern amenities, including high-speed Wi-Fi and round-the-clock security, your stay is effortless. Enjoy a fully-equipped communal kitchen and inviting common area for relaxation and socializing. Located conveniently near major landmarks and public transport, our PG offers the perfect blend of luxury and accessibility for your Agra experience.</p>
+                   <div class="rating">
+  <span class="star fa fa-star"></span>
+  <span class="star fa fa-star"></span>
+  <span class="star fa fa-star"></span>
+  <span class="star fa fa-star"></span>
+  <span class="star fa fa-star-half-stroke"></span>
+</div>
+                    <div class="price"> ₹6500 <span>₹8000</span></div>
+                    <a href="agra.html" class="btn">Book Now</a>
+
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="img/Lucknow.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-market-alt"></i>Lucknow</h3>
+                    <p>Discover our premium PG accommodations in Lucknow, meticulously designed for your comfort and convenience. Located centrally, our fully-furnished rooms boast high-speed internet, nutritious meals, laundry facilities, and round-the-clock security. Experience spacious living spaces and a welcoming environment, ensuring a seamless transition to your home away from home in Lucknow.</p>
+                    <div class="rating">
+  <span class="star fa fa-star"></span>
+  <span class="star fa fa-star"></span>
+  <span class="star fa fa-star"></span>
+  <span class="star fa fa-star"></span>
+  <span class="star fa fa-star"></span>
+</div>
+                    <div class="price"> ₹9500 <span>₹12000</span></div>
+                    <a href="lucknow.html" class="btn">Book Now</a>
+
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="img/Mumbai.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-market-alt"></i>Mumbai</h3>
+                    <p>Step into a realm of urban comfort and artistic flair at our PG in Mumbai. Beyond mere accommodation, we offer a sanctuary where vibrant energy meets tranquil repose. Immerse yourself in our creatively designed spaces, equipped with modern amenities like lightning-fast Wi-Fi and round-the-clock security. Nestled amidst Mumbai's dynamic landscape, our PG promises a harmonious blend of convenience and artistic charm.</p>
+                   <div class="rating">
+  <span class="star fa fa-star"></span>
+  <span class="star fa fa-star"></span>
+  <span class="star fa fa-star"></span>
+  <span class="star fa fa-star"></span>
+  <span class="star fa fa-star-half-stroke"></span>
+</div>
+                    <div class="price"> ₹15000 <span>₹18000</span></div>
+                    <a href="mumbai.html" class="btn">Book Now</a>
+
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="img/Delhi.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-market-alt"></i>Delhi</h3>
+                    <p>Discover your ideal PG accommodation in Delhi, where comfort meets convenience. Our facilities ensure a seamless living experience, offering fully furnished rooms, high-speed internet, delicious meals, and round-the-clock security. Enjoy hassle-free living with amenities like laundry service, housekeeping, and a welcoming community. Experience the best of city life with us. Welcome to your home away from home.</p>
+                   <div class="rating">
+  <span class="star fa fa-star"></span>
+  <span class="star fa fa-star"></span>
+  <span class="star fa fa-star"></span>
+  <span class="star fa fa-star"></span>
+  <span class="star fa fa-star-half-stroke"></span>
+</div>
+                    <div class="price"> ₹12000 <span>₹15000</span></div>
+                    <a href="delhi.html" class="btn">Book Now</a>
+
+                </div>
+            </div>
+        </div>
+      </section>
+
+
+      <section class="services" id="services">
+        <h1 class="heading">
+            <span>s</span>
+            <span>e</span>
+            <span>r</span>
+            <span>v</span>
+            <span>i</span>
+            <span>c</span>
+            <span>e</span>
+            <span>s</span>
+        </h1>
+
+        <div class="box-container">
+            <div class="box">
+                <i class="fas fa-hotel"></i>
+                <h3>affordable hostel</h3>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-utensils"></i>
+                <h3>food and drinks</h3>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-bullhorn"></i>
+                <h3>Safety Guide</h3>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-globe-asia"></i>
+                <h3>Around the World</h3>
+            </div>
+
+           
+        </div>
+      </section>
+
+
+
+      <section class="review" id="review">
+        <h1 class="heading">
+            <span>r</span>
+            <span>e</span>
+            <span>v</span>
+            <span>i</span>
+            <span>e</span>
+            <span>w</span>
+        </h1>
+        
+
+        <div class="swiper mySwiper review-slider">
+            <div class="swiper-wrapper wrapper">
+                <div class=" swiper-slide">
+                    <div class="box">
+                        <img src="img/Kunal.jpg" alt="">
+                        <h3> Krish Sharma</h3>
+                        <p>I recently booked a PG through your service in Delhi, and I couldn't be happier with my experience. From browsing options to finalizing the booking, everything was seamless. The PG itself exceeded my expectations - clean, well-furnished rooms, reliable internet, and delicious meals. The added perks like laundry service and round-the-clock security truly made me feel at home. Thank you for making my stay in Delhi comfortable and hassle-free!</p>
+                       <div class="rating">
+  <span class="star fa fa-star"></span>
+  <span class="star fa fa-star"></span>
+  <span class="star fa fa-star"></span>
+  <span class="star fa fa-star"></span>
+  <span class="star fa fa-star-half-stroke"></span>
+</div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="img/Kunal2.jpg" alt="">
+                        <h3> Kunal Sharma</h3>
+                        <p>Booking through your service made finding a PG in Agra a breeze! The accommodation was clean, well-furnished, and conveniently located. The staff were friendly and responsive, making my stay comfortable and enjoyable. Unfortunately, the PG I booked had inconsistent amenities and cleanliness issues. Despite the initial promise, the overall experience fell short of expectations.</p>
+                       <div class="rating">
+  <span class="star fa fa-star"></span>
+  <span class="star fa fa-star"></span>
+  <span class="star fa fa-star"></span>
+  <span class="star fa fa-star"></span>
+  <span class="star fa fa-star-empty"></span>
+</div>
+                    </div>
+                </div>
+
+                <div class=" swiper-slide">
+                    <div class="box">
+                        <img src="img/Rhishi.jpg" alt="">
+                        <h3> Rhishikesh</h3>
+                        <p>Booking a PG in Lucknow through your service was a breeze! From seamless online booking to hassle-free check-in, every step was smooth. The PG itself exceeded expectations with clean rooms, reliable Wi-Fi, and delicious meals. The staff were courteous, and security was top-notch. Overall, a fantastic experience that I highly recommend to anyone searching for accommodation in Lucknow.</p>
+                       <div class="rating">
+  <span class="star fa fa-star"></span>
+  <span class="star fa fa-star"></span>
+  <span class="star fa fa-star"></span>
+  <span class="star fa fa-star"></span>
+  <span class="star fa fa-star-half-stroke"></span>
+</div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+      </section>
+
+      
+      <section class="review" id="review">
+        <h1 class="heading">
+            <span>c</span>
+            <span>o</span>
+            <span>n</span>
+            <span>t</span>
+            <span>a</span>
+            <span>c</span>
+            <span>t</span>
+        </h1>
+        
+
+        <div class="swiper mySwiper review-slider">
+            <div class="swiper-wrapper wrapper">
+                <div class=" swiper-slide">
+                    <div class="box">
+                        <img src="img/Nikhil.jpg" alt="">
+                        <h3>Nikhil Khandelwal</h3>
+                        <!-- <p>8233150097, gurdawasi2005@gmail.com</p> -->
+                        <div class="row social" align="center">
+   
+                            <a target="_blank" href="https://x.com/NIKHILKHAN59046"><i class="fab fa-twitter"></i></a>
+                            <a target="_blank" href="https://www.instagram.com/nikhilkhandelwal184/"><i class="fab fa-instagram"></i></a>
+                           <a target="_blank" href="https://github.com/gurdawasi"><i class="fab fa-github"></i></a>
+                            <a target="_blank" href="https://discord.com/users/nikhilkhandelwal0755_25094"><i class="fab fa-discord"></i></a>
+                             <a target="_blank" href="https://www.linkedin.com/in/nikhil-khandelwal-32b0a4282/"><i class="fab fa-linkedin"></i></a>
+                          </div>
+                          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+                        <!-- <div class="stars">
+                            <i class="fas fa-star"></i>
+         /                   <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div> -->
+
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="img/Kartikey.jpg" alt="">
+                        <h3> Kartikey Mathur</h3>
+                       <!-- <p>9799300295, kartikeymathur45@gmail.com</p> -->
+                       <div class="row social" align="center">
+   
+                        <a target="_blank" href="https://x.com/Kartikey0620"><i class="fab fa-twitter"></i></a>
+                        <a target="_blank" href="https://www.instagram.com/kartikey_mathur4/?hl=en"><i class="fab fa-instagram"></i></a>
+                       <a target="_blank" href="https://github.com/kartikeymathur4"><i class="fab fa-github"></i></a>
+                        <a target="_blank" href="https://discord.com/users/tranquile_eagle_22007"><i class="fab fa-discord"></i></a>
+                           <a target="_blank" href="https://www.linkedin.com/in/kartikey-mathur-8b1576284/"><i class="fab fa-linkedin"></i></a>
+                      </div>
+                      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+                        <!-- <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div class=" swiper-slide">
+                    <div class="box">
+                        <img src="img/Pranav.jpg" alt="">
+                        <h3>Pranav Khandelwal</h3>
+                        <!-- Social Links Container -->
+<div class="row social" align="center">
+   
+    <a target="_blank" href="https://x.com/beingzpranav_"><i class="fab fa-twitter"></i></a>
+    <a target="_blank" href="https://www.instagram.com/beingzpranav_/"><i class="fab fa-instagram"></i></a>
+   <a target="_blank" href="https://github.com/beingzpranav"><i class="fab fa-github"></i></a>
+    <a target="_blank" href="https://discord.com/users/beingzpranav_"><i class="fab fa-discord"></i></a>
+     <a target="_blank" href="https://www.linkedin.com/in/beingzpranav/"><i class="fab fa-linkedin"></i></a>
+  </div>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+                        <!-- <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div> -->
+                    </div>
+                </div>
+   
+                
+            </div>
+        </div>
+      </section>
+     
+
+
+      <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<script src="main.js"></script>
+</body>
+</html>

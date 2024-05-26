@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="../public/css/tailwind.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+  <header class="bg-white shadow">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+      <div class="flex items-center">
+        <div class="fas fa-bars text-2xl mr-4 cursor-pointer"></div>
+        <a href="#" class="logo text-2xl font-bold">
+          <span class="text-blue-500">APNA-</span>GHAR
+        </a>
+      </div>
+      <nav class="hidden md:flex space-x-6">
+        <a href="/" class="text-gray-600 hover:text-gray-900">Home</a>
+        <a href="#dashboard" class="text-gray-600 hover:text-gray-900">Dashboard</a>
+        <a href="#account" class="text-gray-600 hover:text-gray-900">Account</a>
+        <a href="/logout" class="text-gray-600 hover:text-gray-900">Logout</a>
+      </nav>
+      <div class="icon flex items-center">
+        <i class="fas fa-search text-gray-600 hover:text-gray-900 mr-4 cursor-pointer"></i>
+        <i class="fas fa-user text-gray-600 hover:text-gray-900 cursor-pointer"></i>
+      </div>
+    </div>
+  </header>
+
+  <section class="home py-20" id="home">
+    <div class="container mx-auto text-center">
+      <h3 class="text-3xl font-bold mb-4">Welcome to your Dashboard</h3>
+      <p class="text-gray-600">Manage your account and bookings</p>
+      
+    </div>
+  </section>
+
+  <section class="dashboard py-20" id="dashboard">
+    <div class="container mx-auto text-center">
+      <h1 class="heading text-4xl font-bold mb-8">Welcome, <%= user.username %></h1>
+      <p class="text-gray-600 mb-8">This is your panel.</p>
+      <!-- Add your dashboard content here -->
+    </div>
+  </section>
+
+  <section class="account py-20" id="account">
+    <div class="container mx-auto text-center">
+      <h1 class="heading text-4xl font-bold mb-8">Account Settings</h1>
+      <!-- Add account settings content here -->
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>

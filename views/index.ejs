@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/style1.css">
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+          emailjs.init("U6bvfHX-hxch2mSfS");
+        })();
+    </script>
+</head>
+<body>
+    <!-- Header and other sections -->
+
+    <section class="packages" id="packages">
+        <h1 class="heading">
+            <span>P</span>
+            <span>a</span>
+            <span>c</span>
+            <span>k</span>
+            <span>a</span>
+            <span>g</span>
+            <span>e</span>
+            <span>s</span>
+        </h1>
+
+        <div class="box-container">
+            <% packages.forEach(function(package) { %>
+                <div class="box">
+                    <img src="img/<%= package.location %>.jpg" alt="">
+                    <div class="content">
+                        <h3><i class="fas fa-map-market-alt"></i><%= package.location %></h3>
+                        <p><%= package.description %></p>
+                        <div class="rating">
+                            <% for (let i = 0; i < Math.floor(package.rating); i++) { %>
+                                <span class="star fa fa-star"></span>
+                            <% } %>
+                            <% if (package.rating % 1 !== 0) { %>
+                                <span class="star fa fa-star-half-stroke"></span>
+                            <% } %>
+                        </div>
+                        <div class="price">₹<%= package.price %> <span>₹<%= package.originalPrice %></span></div>
+                        <a href="#" class="btn">book now</a>
+                    </div>
+                </div>
+            <% }); %>
+        </div>
+    </section>
+
+   <!-- ... -->
+<div class="icon">
+    <i class="fas fa-search" id="search-btn"></i>
+    <a href="/login"><i class="fas fa-user" id="login-btn"></i></a>
+    <a href="/register">Register</a>
+  </div>
+  <!-- ... -->
+
+    <!-- Other sections -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>
