@@ -1,1 +1,1 @@
-Project for # HACK THE LEAGUR
+Project for # HACK THE LEAGUE
